@@ -206,6 +206,13 @@
   padding: 9.6rem 0;
 }
 
+.tag {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
 .meal-title {
   font-size: 2rem;
   color: #333;
@@ -222,6 +229,15 @@
 
 .meal-attribute {
   font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.meal-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  color: #e67e22;
 }
 
 .meal-img {
