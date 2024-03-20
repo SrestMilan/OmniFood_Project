@@ -130,6 +130,7 @@ body {
   letter-spacing: 0.75px;
 }
 
+.bttn,
 .bttn:link,
 .bttn:visited {
   display: inline-block;
@@ -138,6 +139,12 @@ body {
   font-weight: 600;
   padding: 1.6rem 3.2rem;
   border-radius: 9px;
+
+  /* for bttn itself */
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  /* transition */
   transition: all 0.3s;
 }
 
@@ -162,6 +169,18 @@ body {
 .bttn--outline:active {
   background-color: #fdf2e9;
   box-shadow: inset 0 0 0 3px #fff;
+}
+
+.bttn-form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+}
+
+.bttn-form:hover {
+  background-color: #fff;
+  color: #555;
 }
 
 .link:link,
@@ -198,6 +217,13 @@ body {
   width: 3rem;
   height: 3rem;
   color: #e67e22;
+}
+
+*:focus {
+  outline: none;
+  /* outline: 4px dotted #e67e22;
+  outline-offset: 8px; */
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
 }
 
 /*HELPER Classess*/
